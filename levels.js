@@ -17,26 +17,147 @@ const themeLibrary = {
 //      LEVEL LIBRARY
 // ==========================================
 const levelLibrary = {
-    1: { theme: "matrix", platforms: [ { x: 300, y: 4950, width: 200, height: 20 }, { x: 500, y: 4800, width: 150, height: 15 }, { x: 200, y: 4650, width: 150, height: 15 }, { x: 500, y: 4500, width: 140, height: 15 }, { x: 150, y: 4350, width: 130, height: 15 }, { x: 450, y: 4200, width: 120, height: 15 }, { x: 150, y: 4050, width: 120, height: 15 }, { x: 320, y: 3900, width: 150, height: 20, isGoal: true } ], coins: [ {x: 575, y: 4760}, {x: 275, y: 4610}, {x: 570, y: 4460}, {x: 215, y: 4310} ], gems: [ {x: 510, y: 4160} ], sunstones: [ {x: 350, y: 4900} ], twigs: [ {x: 200, y: 4420}, {x: 480, y: 4250} ], hazards: [ {x: 520, y: 4485, width: 30, height: 15} ] },
-    2: { theme: "matrix", platforms: [ { x: 300, y: 4950, width: 150, height: 20 }, { x: 550, y: 4800, width: 100, height: 15 }, { x: 250, y: 4650, width: 100, height: 15, patrolX: 80, speed: 1.5 }, { x: 550, y: 4500, width: 90, height: 15 }, { x: 250, y: 4350, width: 90, height: 15 }, { x: 500, y: 4200, width: 80, height: 15 }, { x: 300, y: 4050, width: 150, height: 20, isGoal: true } ], coins: [ {x: 600, y: 4760}, {x: 300, y: 4610}, {x: 300, y: 4310} ], gems: [ {x: 540, y: 4160} ], sunstones: [ {x: 580, y: 4450} ], twigs: [ {x: 320, y: 4610}, {x: 280, y: 4310} ], hazards: [ {x: 560, y: 4485, width: 40, height: 15}, {x: 500, y: 4185, width: 20, height: 15} ] },
-    3: { theme: "matrix", platforms: [ { x: 350, y: 4950, width: 100, height: 20 }, { x: 350, y: 4750, width: 70, height: 15 }, { x: 200, y: 4600, width: 60, height: 15 }, { x: 500, y: 4600, width: 60, height: 15 }, { x: 350, y: 4450, width: 60, height: 15, isCrumbling: true }, { x: 200, y: 4300, width: 50, height: 15 }, { x: 500, y: 4300, width: 50, height: 15 }, { x: 350, y: 4150, width: 100, height: 20, isGoal: true } ], coins: [ {x: 385, y: 4710}, {x: 230, y: 4560}, {x: 530, y: 4560}, {x: 385, y: 4410} ], gems: [ {x: 385, y: 4260} ], sunstones: [ {x: 225, y: 4250} ], twigs: [ {x: 525, y: 4250} ], hazards: [ {x: 360, y: 4735, width: 20, height: 15}, {x: 215, y: 4285, width: 20, height: 15} ] },
-    4: { theme: "synthwave", platforms: [ { x: 350, y: 4950, width: 200, height: 20 }, { x: 250, y: 4800, width: 100, height: 15 }, { x: 450, y: 4650, width: 100, height: 15 }, { x: 250, y: 4500, width: 100, height: 15 }, { x: 400, y: 4350, width: 80, height: 15 }, { x: 200, y: 4200, width: 80, height: 15 }, { x: 350, y: 4050, width: 150, height: 20, isGoal: true } ] },
-    5: { theme: "synthwave", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 350, y: 4800, width: 80, height: 15 }, { x: 250, y: 4650, width: 80, height: 15 }, { x: 450, y: 4650, width: 80, height: 15 }, { x: 350, y: 4500, width: 70, height: 15 }, { x: 350, y: 4350, width: 70, height: 15 }, { x: 250, y: 4200, width: 60, height: 15 }, { x: 450, y: 4200, width: 60, height: 15 }, { x: 350, y: 4000, width: 150, height: 20, isGoal: true } ] },
-    6: { theme: "synthwave", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 200, y: 4800, width: 70, height: 15 }, { x: 500, y: 4650, width: 70, height: 15 }, { x: 250, y: 4500, width: 60, height: 15 }, { x: 450, y: 4350, width: 60, height: 15 }, { x: 300, y: 4200, width: 50, height: 15 }, { x: 400, y: 4050, width: 50, height: 15 }, { x: 350, y: 3900, width: 150, height: 20, isGoal: true } ] },
-    7: { theme: "ice", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 350, y: 4750, width: 60, height: 15 }, { x: 350, y: 4550, width: 60, height: 15 }, { x: 250, y: 4400, width: 50, height: 15 }, { x: 450, y: 4400, width: 50, height: 15 }, { x: 350, y: 4250, width: 50, height: 15 }, { x: 350, y: 4050, width: 150, height: 20, isGoal: true } ] },
-    8: { theme: "ice", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 250, y: 4750, width: 60, height: 15 }, { x: 450, y: 4750, width: 60, height: 15 }, { x: 350, y: 4550, width: 50, height: 15 }, { x: 250, y: 4350, width: 50, height: 15 }, { x: 450, y: 4350, width: 50, height: 15 }, { x: 350, y: 4150, width: 40, height: 15 }, { x: 350, y: 3950, width: 150, height: 20, isGoal: true } ] },
-    9: { theme: "ice", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 200, y: 4800, width: 50, height: 15 }, { x: 500, y: 4650, width: 50, height: 15 }, { x: 200, y: 4500, width: 50, height: 15 }, { x: 500, y: 4350, width: 50, height: 15 }, { x: 350, y: 4200, width: 40, height: 15 }, { x: 350, y: 4000, width: 150, height: 20, isGoal: true } ] },
-    10: { theme: "rust", platforms: [ { x: 300, y: 4950, width: 200, height: 20 }, { x: 200, y: 4780, width: 120, height: 15 }, { x: 450, y: 4610, width: 120, height: 15 }, { x: 250, y: 4440, width: 100, height: 15 }, { x: 400, y: 4270, width: 100, height: 15 }, { x: 350, y: 4100, width: 150, height: 20, isGoal: true } ] },
-    11: { theme: "rust", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 200, y: 4780, width: 100, height: 15 }, { x: 350, y: 4610, width: 100, height: 15 }, { x: 500, y: 4440, width: 100, height: 15 }, { x: 350, y: 4270, width: 100, height: 15 }, { x: 350, y: 4100, width: 150, height: 20, isGoal: true } ] },
-    12: { theme: "rust", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 250, y: 4750, width: 90, height: 15 }, { x: 450, y: 4750, width: 90, height: 15 }, { x: 350, y: 4550, width: 90, height: 15 }, { x: 200, y: 4350, width: 80, height: 15 }, { x: 500, y: 4350, width: 80, height: 15 }, { x: 350, y: 4150, width: 150, height: 20, isGoal: true } ] },
-    13: { theme: "magma", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 250, y: 4750, width: 80, height: 15 }, { x: 450, y: 4750, width: 80, height: 15 }, { x: 350, y: 4550, width: 80, height: 15 }, { x: 200, y: 4350, width: 70, height: 15 }, { x: 500, y: 4350, width: 70, height: 15 }, { x: 350, y: 4150, width: 150, height: 20, isGoal: true } ] },
-    14: { theme: "magma", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 200, y: 4750, width: 70, height: 15 }, { x: 500, y: 4600, width: 70, height: 15 }, { x: 200, y: 4450, width: 70, height: 15 }, { x: 500, y: 4300, width: 70, height: 15 }, { x: 350, y: 4150, width: 150, height: 20, isGoal: true } ] },
-    15: { theme: "magma", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 350, y: 4750, width: 60, height: 15 }, { x: 250, y: 4550, width: 60, height: 15 }, { x: 450, y: 4550, width: 60, height: 15 }, { x: 350, y: 4350, width: 60, height: 15 }, { x: 350, y: 4150, width: 150, height: 20, isGoal: true } ] },
-    16: { theme: "steel", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 200, y: 4750, width: 60, height: 15 }, { x: 350, y: 4600, width: 60, height: 15 }, { x: 500, y: 4450, width: 60, height: 15 }, { x: 350, y: 4300, width: 50, height: 15 }, { x: 350, y: 4100, width: 150, height: 20, isGoal: true } ] },
-    17: { theme: "steel", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 200, y: 4750, width: 60, height: 15 }, { x: 500, y: 4600, width: 60, height: 15 }, { x: 250, y: 4450, width: 50, height: 15 }, { x: 450, y: 4300, width: 50, height: 15 }, { x: 350, y: 4100, width: 150, height: 20, isGoal: true } ] },
-    18: { theme: "steel", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 350, y: 4750, width: 50, height: 15 }, { x: 250, y: 4550, width: 50, height: 15 }, { x: 450, y: 4550, width: 50, height: 15 }, { x: 350, y: 4350, width: 40, height: 15 }, { x: 350, y: 4150, width: 150, height: 20, isGoal: true } ] },
-    19: { theme: "steel", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 200, y: 4750, width: 50, height: 15 }, { x: 500, y: 4600, width: 50, height: 15 }, { x: 350, y: 4450, width: 40, height: 15 }, { x: 250, y: 4300, width: 40, height: 15 }, { x: 450, y: 4300, width: 40, height: 15 }, { x: 350, y: 4100, width: 150, height: 20, isGoal: true } ] },
-    20: { theme: "ruins", platforms: [ { x: 300, y: 4950, width: 200, height: 20 }, { x: 450, y: 4780, width: 100, height: 15 }, { x: 250, y: 4610, width: 100, height: 15, isCrumbling: true }, { x: 450, y: 4440, width: 100, height: 15 }, { x: 350, y: 4270, width: 100, height: 15 }, { x: 300, y: 4100, width: 200, height: 20, isGoal: true } ], coins: [ {x: 500, y: 4760}, {x: 300, y: 4590} ] },
-    30: { theme: "overgrowth", platforms: [ { x: 300, y: 4950, width: 200, height: 20 }, { x: 250, y: 4780, width: 100, height: 15, patrolX: 100, speed: 1.5 }, { x: 450, y: 4550, width: 100, height: 15 }, { x: 250, y: 4350, width: 100, height: 15 }, { x: 300, y: 4150, width: 200, height: 20, isGoal: true } ], coins: [ {x: 300, y: 4760}, {x: 500, y: 4530} ], twigs: [ {x: 300, y: 4320} ] },
-    40: { theme: "wilderness", platforms: [ { x: 300, y: 4950, width: 200, height: 20 }, { x: 200, y: 4780, width: 80, height: 15, isCrumbling: true }, { x: 500, y: 4610, width: 80, height: 15 }, { x: 350, y: 4440, width: 80, height: 15, patrolX: 60, speed: 2 }, { x: 300, y: 4200, width: 200, height: 20, isGoal: true } ], coins: [ {x: 240, y: 4760}, {x: 540, y: 4590} ], sunstones: [ {x: 390, y: 4420} ] }
+    // ----------------------------------------------------
+    // ZONE 1: THE DIGITAL REALM (Levels 1 - 10)
+    // ----------------------------------------------------
+    1: { 
+        theme: "matrix", 
+        platforms: [ 
+            { x: 300, y: 4950, width: 200, height: 20 }, // Start
+            { x: 500, y: 4800, width: 150, height: 15 }, 
+            { x: 200, y: 4650, width: 150, height: 15 }, 
+            { x: 500, y: 4500, width: 140, height: 15 }, 
+            { x: 150, y: 4350, width: 130, height: 15 }, 
+            { x: 450, y: 4200, width: 120, height: 15 }, 
+            { x: 150, y: 4050, width: 120, height: 15 }, 
+            { x: 320, y: 3900, width: 150, height: 20, isGoal: true } 
+        ], 
+        coins: [ {x: 575, y: 4760}, {x: 275, y: 4610}, {x: 570, y: 4460}, {x: 215, y: 4310} ]
+    },
+    2: { 
+        theme: "matrix", 
+        platforms: [ 
+            { x: 300, y: 4950, width: 150, height: 20 }, 
+            { x: 100, y: 4800, width: 100, height: 15 }, 
+            { x: 350, y: 4650, width: 100, height: 15 }, 
+            { x: 600, y: 4500, width: 100, height: 15 }, 
+            { x: 350, y: 4350, width: 100, height: 15 }, 
+            { x: 100, y: 4200, width: 100, height: 15 }, 
+            { x: 300, y: 4000, width: 150, height: 20, isGoal: true } 
+        ], 
+        coins: [ {x: 150, y: 4760}, {x: 650, y: 4460} ], 
+        twigs: [ {x: 400, y: 4610} ] 
+    },
+    3: { 
+        theme: "matrix", 
+        platforms: [ 
+            { x: 350, y: 4950, width: 100, height: 20 }, 
+            { x: 350, y: 4750, width: 70, height: 15 }, 
+            { x: 200, y: 4600, width: 60, height: 15 }, 
+            { x: 500, y: 4600, width: 60, height: 15 }, 
+            { x: 350, y: 4450, width: 60, height: 15 }, 
+            { x: 200, y: 4300, width: 50, height: 15 }, 
+            { x: 500, y: 4300, width: 50, height: 15 }, 
+            { x: 350, y: 4100, width: 100, height: 20, isGoal: true } 
+        ], 
+        gems: [ {x: 380, y: 4400} ], 
+        hazards: [ {x: 360, y: 4735, width: 50, height: 15} ] // First hazard introduced
+    },
+    4: { 
+        theme: "synthwave", // Visual switch
+        platforms: [ 
+            { x: 350, y: 4950, width: 150, height: 20 }, 
+            { x: 200, y: 4800, width: 80, height: 15, patrolX: 100, speed: 1.5 }, // First Moving Platform
+            { x: 500, y: 4600, width: 80, height: 15 }, 
+            { x: 300, y: 4400, width: 80, height: 15, patrolX: 80, speed: 2 }, // Faster moving platform
+            { x: 500, y: 4200, width: 80, height: 15 }, 
+            { x: 350, y: 4000, width: 150, height: 20, isGoal: true } 
+        ],
+        coins: [ {x: 540, y: 4560}, {x: 540, y: 4160} ]
+    },
+    5: { 
+        theme: "synthwave", 
+        platforms: [ 
+            { x: 350, y: 4950, width: 150, height: 20 }, 
+            { x: 100, y: 4800, width: 60, height: 15 }, 
+            { x: 350, y: 4650, width: 60, height: 15 }, 
+            { x: 600, y: 4500, width: 60, height: 15 }, 
+            { x: 350, y: 4350, width: 60, height: 15 }, 
+            { x: 100, y: 4200, width: 60, height: 15 }, 
+            { x: 350, y: 4000, width: 150, height: 20, isGoal: true } 
+        ],
+        sunstones: [ {x: 380, y: 4600} ], // Introduce Sunstone
+        hazards: [ {x: 100, y: 4785, width: 20, height: 15}, {x: 600, y: 4485, width: 20, height: 15} ]
+    },
+    6: { 
+        theme: "synthwave", 
+        platforms: [ 
+            { x: 350, y: 4950, width: 150, height: 20 }, 
+            { x: 350, y: 4750, width: 150, height: 15, patrolX: 150, speed: 2 }, 
+            { x: 350, y: 4550, width: 100, height: 15 }, 
+            { x: 150, y: 4400, width: 80, height: 15, patrolX: 50, speed: 1 }, 
+            { x: 550, y: 4250, width: 80, height: 15, patrolX: 50, speed: 1 }, 
+            { x: 350, y: 4050, width: 150, height: 20, isGoal: true } 
+        ],
+        twigs: [ {x: 400, y: 4500} ]
+    },
+    7: { 
+        theme: "ice", // Visual switch
+        platforms: [ 
+            { x: 350, y: 4950, width: 150, height: 20 }, 
+            { x: 450, y: 4800, width: 50, height: 15 }, // Small precision jumps
+            { x: 250, y: 4650, width: 50, height: 15 }, 
+            { x: 450, y: 4500, width: 50, height: 15 }, 
+            { x: 250, y: 4350, width: 50, height: 15 }, 
+            { x: 450, y: 4200, width: 50, height: 15 }, 
+            { x: 350, y: 4000, width: 150, height: 20, isGoal: true } 
+        ],
+        coins: [ {x: 475, y: 4760}, {x: 275, y: 4610}, {x: 475, y: 4460}, {x: 275, y: 4310} ]
+    },
+    8: { 
+        theme: "ice", 
+        platforms: [ 
+            { x: 350, y: 4950, width: 150, height: 20 }, 
+            { x: 200, y: 4800, width: 100, height: 15, isCrumbling: true }, // Introduce Crumbling
+            { x: 400, y: 4650, width: 100, height: 15, isCrumbling: true }, 
+            { x: 600, y: 4500, width: 100, height: 15, isCrumbling: true }, 
+            { x: 400, y: 4350, width: 80, height: 15 }, // Safe spot
+            { x: 200, y: 4200, width: 80, height: 15, isCrumbling: true }, 
+            { x: 350, y: 4000, width: 150, height: 20, isGoal: true } 
+        ],
+        gems: [ {x: 440, y: 4300} ]
+    },
+    9: { 
+        theme: "ice", 
+        platforms: [ 
+            { x: 350, y: 4950, width: 150, height: 20 }, 
+            { x: 350, y: 4750, width: 60, height: 15, patrolX: 200, speed: 3 }, // Fast moving
+            { x: 350, y: 4550, width: 60, height: 15 }, 
+            { x: 350, y: 4350, width: 60, height: 15, patrolX: 200, speed: 3 }, 
+            { x: 350, y: 4150, width: 150, height: 20, isGoal: true } 
+        ],
+        hazards: [ {x: 350, y: 4535, width: 60, height: 15} ], // Spike on the safe middle platform!
+        sunstones: [ {x: 380, y: 4700} ]
+    },
+    10: { 
+        // ZONE 1 FINALE
+        theme: "matrix", 
+        platforms: [ 
+            { x: 300, y: 4950, width: 200, height: 20 }, 
+            { x: 100, y: 4800, width: 80, height: 15, isCrumbling: true }, 
+            { x: 350, y: 4650, width: 100, height: 15, patrolX: 100, speed: 2 }, 
+            { x: 600, y: 4500, width: 80, height: 15, isCrumbling: true }, 
+            { x: 350, y: 4350, width: 80, height: 15 }, 
+            { x: 100, y: 4200, width: 80, height: 15, patrolX: 50, speed: 1.5 }, 
+            { x: 350, y: 4000, width: 200, height: 20, isGoal: true } 
+        ], 
+        hazards: [ {x: 370, y: 4335, width: 40, height: 15} ],
+        gems: [ {x: 450, y: 3950} ],
+        twigs: [ {x: 140, y: 4750} ]
+    },
+    
+    // ----------------------------------------------------
+    // PREVIEW OF ZONE 2 (Placeholder so you can keep playing)
+    // ----------------------------------------------------
+    11: { theme: "rust", platforms: [ { x: 350, y: 4950, width: 150, height: 20 }, { x: 350, y: 4750, width: 100, height: 15 }, { x: 350, y: 4550, width: 150, height: 20, isGoal: true } ] }
 };
