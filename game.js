@@ -1,3 +1,8 @@
+// Initialize core canvas variables at the very top of the file
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+const worldHeight = 5000; 
+
 // ==========================================
 //      PROCEDURAL TEXTURE GENERATOR
 // ==========================================
